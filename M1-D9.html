@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <!--
+        BINGO CHALLENGE!!!
+        Create programmatically (with JS) a BINGO board with 76 cells, from 1 to 76.
+        Create a button to randomize a number from 1 to 76. The same number should be highlighted on the bingo board
+
+        EXTRA: 
+        - Take ALWAYS a new number (eg. avoid randoming the number 10 3 times)
+        - Create a USER BOARD with 24 randomized numbers that highlights as the main board does
+        - Let the user choose HOW MANY user boards he's willing to play with and create them.
+    -->
+  <head>
+    <script src="m1-d9.js"></script>
+<style>
+  html{
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(129, 243, 14);
+  }
+body{
+  background-color: black;
+    color: white;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+#board-container{
+border-color: chartreuse;
+background-color: darkslategray;
+color: rgb(217, 223, 211);
+border-style: solid;
+border-width: 3px;
+padding: 12px;
+border-radius: 8px;
+display: inline-block;
+width: 95%;
+}
+.cardContainer{
+    background-color: #0f0f0f;
+    display: inline-block;
+    width: 15%;
+    min-height: 22px;
+    text-align: center;
+    padding-top: 4px;
+    font-size: larg;
+    font-weight: bold;
+    border-style: solid;
+    border-radius: 8px;
+    margin: 3px;
+    border-color: #383838;
+}
+.selected {
+    border-color: #888;
+    background-color: rgb(13, 238, 62);
+    color: black;
+}
+
+  
+</style>
+
+  </head>
+  <body>
+<h1>BINGO!!!!!</h1>
+<div>
+  <input type="button" value="BINGO" onclick="selectNum()"/>
+</div>
+<div id = "board-container">
+
+</div>
+
+  </body>
+
+</html>
